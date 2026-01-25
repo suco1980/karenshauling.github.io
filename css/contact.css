@@ -98,7 +98,6 @@ body {
  .social-media{
  	display: flex;
  	justify-content: space-around;
- 	max-width: 18.75em;
  	margin: auto;
  }
  .contact_social-icons{
