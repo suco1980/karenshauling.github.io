@@ -212,3 +212,9 @@ body {
 .fields-incorrect .form_input{
 	border: 1px solid #bb2929;
 }
+
+
+#map{
+	width: 100%;
+	height: 400px;
+}
