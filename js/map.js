@@ -1,9 +1,11 @@
-let map;
-async function initMap() {
-    const { Map } = (await google.maps.importLibrary('maps'));
-    map = new Map(document.getElementById('map'), {
-        center: { lat: -34.397, lng: 150.644 },
-        zoom: 8,
+function initMap() {
+    const location = { lat: 40.7128, lng: -74.0060 }; // ejemplo
+    const map = new google.maps.Map(document.getElementById("map"), {
+      zoom: 14,
+      center: location,
     });
-}
-initMap();
+    new google.maps.Marker({
+      position: location,
+      map: map,
+    });
+  }
