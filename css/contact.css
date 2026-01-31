@@ -212,11 +212,14 @@ body {
 .fields-incorrect .form_input{
 	border: 1px solid #bb2929;
 }
-
+.googlemap{
+	
+	padding: 10px 0px 0px 0px;
+}
 
 #map{
 	width: 100%;
 	height: 400px;
-	padding: 10px; ;
+	
 
 }
