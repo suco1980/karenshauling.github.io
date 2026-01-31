@@ -12,6 +12,7 @@ body {
 	grid-template-columns: repeat(3, 1fr );
 	grid-template-areas:"contact_banner contact_banner contact_banner"
 	                    "contact-container contact-container contact-container" 
+						"googlemap googlemap googlemap"
 	                    "ftr_main ftr_main ftr_main";
 }
 .nav-link{
