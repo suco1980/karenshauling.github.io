@@ -114,32 +114,32 @@
 		 <div id="map">
 				 
 		 </div>
-		 <script>
-  async function initMap() {
-    const { Map } = await google.maps.importLibrary("maps");
-    const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
-
+<script>
+  function initMap() {
     const location = { lat: 40.7128, lng: -74.0060 };
 
-    const map = new Map(document.getElementById("map"), {
-      zoom: 14,
-      center: location,
-      mapId: "bd2a75769f25eee1256e5154"
-    });
+    const map = new google.maps.Map(
+      document.getElementById("map"),
+      {
+        zoom: 14,
+        center: location
+      }
+    );
 
-    new AdvancedMarkerElement({
-      map,
+    new google.maps.Marker({
       position: location,
-      title: "Karen's Hauling",
+      map: map,
+      title: "Karen's Hauling"
     });
   }
 </script>
 
 <script
-  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9GGCsY6YFTsrOLeKnXfdcpcjwfsSzL70&callback=initMap&libraries=marker"
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9GGCsY6YFTsrOLeKnXfdcpcjwfsSzL70&callback=initMap"
   async
   defer>
 </script>
+
 
 
 
