@@ -88,8 +88,8 @@ $("#contact-form").submit(function(event){
   event.preventDefault();
   $("#contact-form");
  $.ajax({
-  url: "contact-form.php",
-  type:"post",
+  // url: "contact-form.php",
+  // type:"post",
   data:$("#contact-form").serialize(),
   success:function(rest){
   //   $("").html(rest);
